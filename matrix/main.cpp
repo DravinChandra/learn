@@ -7,22 +7,27 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
 #include <iostream>
-using namespace std;
-void fact(int n){
-    int fsa=1;
-    for (int i=1 ;i<=n ;i++){
-         fsa *=i;
-       
-    }
-    cout<< fsa ; 
-}  
+using namespace std ;
 
-int main()
-{
-    int num ;
-    cout <<"enter your number :";
-    cin>> num;
-    fact(num);
+int main(){
+    int r ,c ;
+    cout<< " enter number of row :";
+    cin>>r;
+    cout<< " enter number of col :";
+    cin>> c;
+    int matrix[200][200];
+     for(int i = 0; i<r; i++){
+         for(int j=0 ; j<c; j++){
+             cin>>matrix[i][j];
+         }
+     }
+    //  cout<<matrix<<"\n";
+     for(int i=0 ; i<r; i++){
+         for(int j= 0; j<c ; j++){
+             cout<<matrix[i][j]<<"  ";
+         }
+         cout<<endl;
+     }
 
     return 0;
 }

@@ -7,22 +7,23 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
 #include <iostream>
-using namespace std;
-void fact(int n){
-    int fsa=1;
-    for (int i=1 ;i<=n ;i++){
-         fsa *=i;
-       
-    }
-    cout<< fsa ; 
-}  
-
-int main()
+using namespace std ;
+int mainrffffvgbgk,llllll
+ fbdfgfk,,iiitbgffvc 
 {
-    int num ;
-    cout <<"enter your number :";
-    cin>> num;
-    fact(num);
-
+    int i , j, m ,n ;
+    int arr[i][j]  ;
+    cout << "enter your the no of rows ;";
+    cin >> m ;
+    cout << "enter your the no  of col :";
+    cin >> n ;
+    for ( int i = 0 ; i < m ; i++){
+        for (int j= 0 ; j < n ; i ++){
+            cout<< arr[i][j]<< "\t" ;
+            
+        } cout<< endl ;
+    }
+rffffvgbgk,llllll
+ fbdfgfk,,iiitbgffvc 
     return 0;
 }

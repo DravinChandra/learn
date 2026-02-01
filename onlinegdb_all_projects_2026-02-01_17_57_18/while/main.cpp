@@ -7,22 +7,18 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
 #include <iostream>
-using namespace std;
-void fact(int n){
-    int fsa=1;
-    for (int i=1 ;i<=n ;i++){
-         fsa *=i;
-       
-    }
-    cout<< fsa ; 
-}  
-
+using namespace std ;
 int main()
 {
-    int num ;
-    cout <<"enter your number :";
-    cin>> num;
-    fact(num);
+    int i = 0 ;
+    while (i <5 ){
+        cout << i<<endl;
+        i+=1;
+        if(i ==3){
+            break;
+        }
+    }
+    
 
     return 0;
 }

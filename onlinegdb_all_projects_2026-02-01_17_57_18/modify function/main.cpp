@@ -7,22 +7,17 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
 #include <iostream>
-using namespace std;
-void fact(int n){
-    int fsa=1;
-    for (int i=1 ;i<=n ;i++){
-         fsa *=i;
-       
-    }
-    cout<< fsa ; 
-}  
-
+using namespace std ;
+void modify(int a){
+    a=50 ;
+    cout<<"the value of a :"<<a <<endl;
+}
 int main()
 {
-    int num ;
-    cout <<"enter your number :";
-    cin>> num;
-    fact(num);
+    int a =5 ;
+    cout<<"the value odf a "<<endl;
+    modify(a);
+    cout<< "the value of a "<<a;
 
     return 0;
 }

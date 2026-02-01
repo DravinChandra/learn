@@ -7,22 +7,21 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
 #include <iostream>
-using namespace std;
-void fact(int n){
-    int fsa=1;
-    for (int i=1 ;i<=n ;i++){
-         fsa *=i;
-       
-    }
-    cout<< fsa ; 
-}  
-
+using namespace std ;
+void swap(int *x ,int *y);
 int main()
 {
-    int num ;
-    cout <<"enter your number :";
-    cin>> num;
-    fact(num);
+    int a,b ;
+    a= 5;
+    b=10;
+    swap( a ,b);
 
     return 0;
+}
+void swap(int *x ,int *y){
+    int temp = x ;
+    x=y;
+    y = temp;
+    cout <"value of a :"<<x<<endl<<"value od b :"<<b ;
+    
 }

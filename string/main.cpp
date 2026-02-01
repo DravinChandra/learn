@@ -7,22 +7,20 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
 #include <iostream>
-using namespace std;
-void fact(int n){
-    int fsa=1;
-    for (int i=1 ;i<=n ;i++){
-         fsa *=i;
-       
-    }
-    cout<< fsa ; 
-}  
+#include <iostream>
 
+using namespace std ;
 int main()
 {
-    int num ;
-    cout <<"enter your number :";
-    cin>> num;
-    fact(num);
+    string str = "Welcome";
+    cout<<str;
+    cout<<endl;
+    string stra  = {"Welcome"};
+    cout<<stra;
+    string ste {"welcome"};
+    cout<<endl;
+    cout<<ste;
+    
 
     return 0;
 }

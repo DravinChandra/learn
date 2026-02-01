@@ -7,22 +7,36 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
 #include <iostream>
-using namespace std;
-void fact(int n){
-    int fsa=1;
-    for (int i=1 ;i<=n ;i++){
-         fsa *=i;
-       
+using namespace std ;
+void func(int n){
+    if(n<1){
+        cout<<"invailed terms.";
     }
-    cout<< fsa ; 
-}  
-
+    
+   int f = 0 ,f1 =1 ;
+   cout << f<<" ";
+   
+     if ( n==1){
+       cout<<f1<<" ";
+       
+   }
+   else if (n>1){
+       while(n>1){
+       int f2 ;
+       f2 = f1 +f ;
+       f =f1;
+       f1=f2;
+       cout<< f2 <<" ";
+       n--;
+   }
+   }
+   
+}                          
 int main()
 {
     int num ;
-    cout <<"enter your number :";
     cin>> num;
-    fact(num);
+    func(num);
 
     return 0;
 }

@@ -7,22 +7,22 @@ Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
 #include <iostream>
-using namespace std;
-void fact(int n){
-    int fsa=1;
-    for (int i=1 ;i<=n ;i++){
-         fsa *=i;
-       
+using namespace std ;
+int compare(int a, int b){
+    if (a>b ){
+        cout<<" Greater number :"<<a<<endl;
     }
-    cout<< fsa ; 
-}  
+    else{
+        cout<< "Greater number is :"<<b<< endl;
+    }
+}
 
 int main()
-{
-    int num ;
-    cout <<"enter your number :";
-    cin>> num;
-    fact(num);
+{ 
+    int num1 ,num2 ;
+    cout << "enter your number :"<<endl;
+    cin>>num1>> num2;
+    compare(num1,num2);
 
     return 0;
 }
